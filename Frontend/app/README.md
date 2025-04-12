@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# EduPDF - MCQ Generator and PDF Processor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+EduPDF is a full-stack web application that allows users to generate multiple-choice questions (MCQs) and get answers instantly from PDF content or specified topics. It combines a React frontend and a Flask backend, leveraging APIs for question generation and PDF Q&A. The app utilizes FAISS indexing and `all-MiniLM-L6-v2` for embedding creation, offering a seamless experience for generating and answering MCQs.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+##  Getting Started
 
-### `npm start`
+Follow these instructions to set up and run the project locally.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1️. Start the Backend
 
-### `npm test`
+1. Open a terminal and navigate to the backend directory:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+cd Backend
+```
 
-### `npm run build`
+2. Install the dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+pip install -r requirements.txt
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Run the backend server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+python app.py
+```
 
-### `npm run eject`
+You can install dependencies using:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+pip install -r requirements.txt
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2️. Start the Frontend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Open a new terminal and navigate to the frontend directory:
 
-## Learn More
+```bash
+cd Frontend/app
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Start the React app:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm install  # Run only once to install dependencies
+npm start
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+###  API Keys
 
-### Analyzing the Bundle Size
+Add your API keys (if any) in a `.env` file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+You can place the `.env` file in any of the following locations:
+- Inside the `MCQ_Generator` folder
+- Inside the `PDF_Processor` folder
+- Inside the root `Backend` folder
 
-### Making a Progressive Web App
+Format of `.env` file:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```env
+API_KEY=your_api_key_here
+```
 
-### Advanced Configuration
+Make sure to **not** commit the `.env` file to GitHub if it contains sensitive information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## 📌 Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- React runs on `http://localhost:3000`
+- Flask backend runs on `http://localhost:5000`
+- Ensure CORS is handled correctly if you're connecting frontend and backend
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📃 License
+
+This project is open source and available under the [MIT License](LICENSE).
