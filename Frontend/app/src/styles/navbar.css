@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'TaraType';
+    src: url('../fonts/Taratype-ywG5.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.navbar{
+    background-color:rgb(37, 3, 111);
+    display: block;
+    padding: 20px;
+    min-height: 100px;
+}
+
+.EduPDF {
+    font-size: 50px;
+    font-family: 'TaraType'; 
+    color: white;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.caption {
+    font-size: 30px;
+    margin-top: 25  px;
+    font-family: 'TaraType'; 
+    color: white;
+}

@@ -1,0 +1,59 @@
+.header-div{
+    margin: 20px;
+    padding: 20px;
+}
+
+.enclosure{
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 0;
+}
+
+.clipart{
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-left: 0px;
+    max-height: 400px;
+}
+.content-1{
+    max-width: 40%;
+    padding-left: 40px;
+}
+
+.image{
+    max-width: 45%;
+}
+
+.heading{
+    color: rgb(37, 3, 111);
+    font-size: 45px;
+    font-style: bold;
+    text-align: left;
+}
+
+.introduction{
+    text-align: justify;
+    font-size: 25px;
+    color:  rgba(0, 0, 0, 0.782);
+
+}
+
+.content-2, .content-3{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.mcq-heading, .pdf-heading{
+    font-size: 40px;
+    color: rgb(37, 3, 111);
+}
+
+.mcq, .pdf{
+    font-size: 25px;
+    color:  rgba(0, 0, 0, 0.782);
+    text-align: justify;
+}
+
+.link{
+    color: rgb(37, 3, 111);
+}

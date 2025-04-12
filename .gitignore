@@ -1,0 +1,6 @@
+# Ignore venv folder inside Backend
+Backend/venv/
+
+# Ignore .env files inside Backend/MCQ_Generator and Backend/PDF_Processor
+Backend/MCQ_Generator/.env
+Backend/PDF_Processor/.env

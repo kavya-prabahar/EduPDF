@@ -1,0 +1,213 @@
+/* Main container for MCQ content */
+.content-mcq {
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 700px;
+    border-radius: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* MCQ page title */
+.mcq-page {
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Heading styles */
+.mcq-heading {
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(37, 3, 111);
+    margin-bottom: 30px;
+}
+
+/* Input section */
+.inputs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.inputs label {
+    font-size: 20px;
+    color: #2f3337;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.inputs input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+/* File upload & topic name input containers */
+.file-upload,
+.topic-name {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: left;
+}
+
+.file-upload label,
+.topic-name label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #17191b;
+}
+
+/* Input fields */
+.input-file,
+.input-topic,
+.difficulty,
+.No-of-questions {
+    width: 95%;
+    padding: 12px;
+    margin-top: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #495057;
+    background-color: #f1f3f5;
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: rgb(37, 3, 111);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+/* MCQ Output Section */
+.mcqs-output {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #c0bfbf;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    margin: 30px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: auto;
+}
+
+/* List styling for MCQs */
+.mcqs-output h2 {
+    font-size: 20px;
+}
+
+/* List styling for MCQs */
+.mcqs-output ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mcqs-output li {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.784);
+    padding: 12px;
+    background-color: #e3e3e3;
+    border-radius: 8px;
+    margin-bottom: 13px;
+}
+
+.mcqs-output li .question-text{
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.784);
+    padding: 12px;
+    background-color: #e3e3e3;
+    border-radius: 8px;
+    margin-bottom: 13px;
+}
+/* MCQ question container */
+.mcq-question {
+    background-color: #343a40;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+
+
+/* Highlight correct answer */
+.correct {
+    color: #28a745;
+    font-weight: bold;
+}
+.mcqs-output {
+  text-align: justify;
+  margin-top: 2rem;
+}
+
+.question-text {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.options {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+button.submit-file,
+button.submit-topic {
+  background-color: rgb(37, 3, 111);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button.submit-file:disabled,
+button.submit-topic:disabled {
+  background-color: #bcbcbc;
+  cursor: not-allowed;
+}
+
+
+  button.generate-button:hover:not(:disabled):not(.generating) {
+    background-color: rgb(51, 7, 148);
+    transform: scale(1.03);
+  }
+  
+
+  
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .content-mcq {
+        max-width: 90%;
+    }
+
+    .file-upload,
+    .topic-name {
+        max-width: 90%;
+    }
+
+    .inputs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mcqs-output {
+        max-width: 90%;
+    }
+}
+

@@ -1,0 +1,84 @@
+.content-pdf {
+    padding: 40px 30px;
+    margin: 50px auto;
+    max-width: 700px; 
+    border-radius: 20px;
+    background-color: #f8f9fa; 
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.pdf-page {
+    padding-top: 20px;
+    text-align: center; 
+}
+
+.pdf-heading {
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(37, 3, 111);
+    margin-bottom: 30px;
+}
+
+.pdf-upload {
+    margin: 20px auto;
+    padding: 20px 50px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px; 
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pdf-upload label {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size: 18px;
+    color: #17191b;
+}
+
+.pdf-file,
+.text-box {
+    width: 95%;
+    padding: 10px;
+    margin: 20px auto 15px auto;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #495057;
+    background-color: #f1f3f5;
+}
+
+.submit-pdf {
+    width: 100%;
+    padding: 12px auto;
+    font-size: 1.1rem;
+    align-self: center;
+    color: white;
+    background-color: rgb(37, 3, 111);
+    border: none;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-pdf:hover {
+    background-color: rgb(51, 7, 148);
+}
+
+.submit-pdf.loading {
+    background-color: grey;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.submit-pdf.loading:hover {
+    background-color: grey;
+    transform: none;
+}
+
