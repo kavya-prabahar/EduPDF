@@ -72,8 +72,3 @@ Make sure to **not** commit the `.env` file to GitHub if it contains sensitive i
 - Flask backend runs on `http://localhost:5000`
 - Ensure CORS is handled correctly if you're connecting frontend and backend
 
----
-
-## 📃 License
-
-This project is open source and available under the [MIT License](LICENSE).
