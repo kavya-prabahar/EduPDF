@@ -29,13 +29,6 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
-
-You can install dependencies using:
-
-```bash
-pip install -r requirements.txt
-```
-
 ---
 
 ### 2️. Start the Frontend
